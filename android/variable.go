@@ -99,6 +99,8 @@ type variableProperties struct {
 
 		// include AOKP variables
 		Aokp android.Product_variables
+		// include Lineage variables too
+		Lineage android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -175,6 +177,8 @@ type productVariables struct {
 
 	// include AOKP variables
 	Aokp android.ProductVariables
+	// include Lineage variables too
+	Lineage android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
