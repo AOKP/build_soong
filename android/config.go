@@ -471,11 +471,11 @@ func (c *config) ResourceOverlays() []string {
 }
 
 func (c *config) JavaSourceOverlays() string {
-	return String(c.productVariables.Aokp.Java_Source_Overlays)
+	return String(c.productVariables.Lineage.Java_Source_Overlays)
 }
 
 func (c *config) JavaSourceOverlayModuleWhitelist() []string {
-	return android.AokpConfig.JavaSourceOverlayModuleWhitelist
+	return android.LineageConfig.JavaSourceOverlayModuleWhitelist
 }
 
 func (c *config) PlatformVersionName() string {
@@ -787,7 +787,7 @@ func (c *deviceConfig) DeviceKernelHeaderDirs() []string {
 }
 
 func (c *deviceConfig) SpecificCameraParametersLibrary() string {
-	return String(c.config.productVariables.Aokp.Specific_camera_parameter_library)
+	return String(c.config.productVariables.Lineage.Specific_camera_parameter_library)
 }
 
 func (c *deviceConfig) NativeCoverageEnabled() bool {
