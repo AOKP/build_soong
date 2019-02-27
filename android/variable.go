@@ -117,8 +117,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include AOKP variables
-		Aokp android.Product_variables
+		// include Lineage variables
+		Lineage android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -236,8 +236,8 @@ type productVariables struct {
 
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
-	// include AOKP variables
-	Aokp android.ProductVariables
+	// include Lineage variables
+	Lineage android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
